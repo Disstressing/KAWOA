@@ -1,0 +1,8 @@
+local args = {
+    [1] = "Attack",
+    [2] = {
+        [1] = workspace:WaitForChild("Attackable"):WaitForChild("BOAR [LVL 2]"):WaitForChild("Mob")
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Hit"):FireServer(unpack(args))
